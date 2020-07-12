@@ -132,38 +132,18 @@
 -- select * from practice_delete;
 
 -- ECOMMERCE SIMULATION
--- create table products (
---   id serial primary key,
---   name varchar(40),
---   email varchar(100)
+-- create table users (
+--   user_id serial primary key,
+--   user_name varchar(40),
+--   user_email varchar(100)
 --   );
 
 -- create table products (
---   id serial primary key,
---   name varchar(100),
---   price float
+--   product_id serial primary key,
+--   product_name varchar(40),
+--   product_price varchar(100)
 --   );
 
 -- create table orders (
---   id serial primary key,
---   customer varchar(40),
---   amount integer,
---   name varchar(100),
---   price float
---   );
-
--- insert into users (name, email) values ('Cameron', 'cskelly15@gmail.com');
--- insert into users (name, email) values ('Bryan', 'bryansupercool@live.com');
--- insert into users (name, email) values ('Riley', 'rileybb@yahoo.com');
--- insert into products (name, price) values ('Hot Diggidy Dog', 10.99);
--- insert into products (name, price) values ('Taco', 1.99);
--- insert into products (name, price) values ('Luigi Amiibo', 24.99);
--- insert into orders (customer, amount, name, price) values ('Cameron', 3, 'Taco', 1.99);
--- insert into orders (customer, amount, name, price) values ('Bryan', 1, 'Luigi Amiibo', 24.99);
--- insert into orders (customer, amount, name, price) values ('Riley', 5, 'Hot Diggidy Dog', 10.99);
-
--- select * from products p
--- join orders o on p.id = o.id 
--- where o.id = 1;
-
--- select * from orders;
+--   order_id serial primary key,
+--   product_id integer references products(product_id));
